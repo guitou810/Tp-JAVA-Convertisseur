@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="381.0" style="-fx-background-color: #086DA3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VueControlleur">
+   <children>
+      <Label layoutX="151.0" layoutY="14.0" prefHeight="35.0" prefWidth="79.0" text="Devise" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Line endX="190.0" layoutX="191.0" layoutY="57.0" startX="-191.0" stroke="WHITE" />
+      <Label layoutX="29.0" layoutY="58.0" prefHeight="35.0" prefWidth="79.0" text="Favoris" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="157.5" layoutX="192.0" layoutY="93.0" startX="-163.0" stroke="WHITE" />
+      <Label layoutX="29.0" layoutY="154.0" prefHeight="35.0" prefWidth="79.0" text="Général" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="157.5" layoutX="193.0" layoutY="189.0" startX="-163.0" stroke="WHITE" />
+      <ImageView fx:id="US" fitHeight="35.0" fitWidth="55.0" layoutX="30.0" layoutY="216.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Users/Eleve/Downloads/flag-wave-250.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="EU" fitHeight="35.0" fitWidth="55.0" layoutX="30.0" layoutY="270.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Users/Eleve/Downloads/unnamed.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="UK" fitHeight="35.0" fitWidth="55.0" layoutX="30.0" layoutY="324.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Users/Eleve/Downloads/image-drapeau-anglais-telechargement-gratuit.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="157.5" layoutX="192.0" layoutY="316.0" startX="-163.0" stroke="WHITE" />
+      <Line endX="157.5" layoutX="193.0" layoutY="261.0" startX="-163.0" stroke="WHITE" />
+      <Line endX="157.5" layoutX="193.0" layoutY="369.0" startX="-163.0" stroke="WHITE" />
+      <ImageView fx:id="CN" fitHeight="35.0" fitWidth="55.0" layoutX="30.0" layoutY="383.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Users/Eleve/Downloads/image-drapeau-de-chine-telechargement-gratuit.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="PrixUS" layoutX="297.0" layoutY="208.0" prefHeight="35.0" prefWidth="55.0" text="0.00" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="PrixEU" layoutX="297.0" layoutY="270.0" prefHeight="35.0" prefWidth="55.0" text="0.00" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="PrixUK" layoutX="297.0" layoutY="324.0" prefHeight="35.0" prefWidth="55.0" text="0.00" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="PrixCN" layoutX="297.0" layoutY="383.0" prefHeight="35.0" prefWidth="55.0" text="0.00" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="FAV" fitHeight="35.0" fitWidth="55.0" layoutX="30.0" layoutY="108.0" pickOnBounds="true" />
+      <Label fx:id="LabelUS" layoutX="97.0" layoutY="220.0" text="US" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelEU" layoutX="97.0" layoutY="274.0" text="EU" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelUK" layoutX="97.0" layoutY="328.0" text="UK" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelCN" layoutX="97.0" layoutY="387.0" text="CN" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelFAV" layoutX="97.0" layoutY="112.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnUS" layoutX="30.0" layoutY="216.0" mnemonicParsing="false" onAction="#choiceFav" opacity="0.0" prefHeight="35.0" prefWidth="55.0" text="US" />
+      <Button fx:id="BtnEU" layoutX="30.0" layoutY="270.0" mnemonicParsing="false" onAction="#choiceFav" opacity="0.0" prefHeight="35.0" prefWidth="55.0" text="EU" />
+      <Button fx:id="BtnUK" layoutX="30.0" layoutY="324.0" mnemonicParsing="false" onAction="#choiceFav" opacity="0.0" prefHeight="35.0" prefWidth="55.0" text="UK" />
+      <Button fx:id="BtnCN" layoutX="30.0" layoutY="383.0" mnemonicParsing="false" onAction="#choiceFav" opacity="0.0" prefHeight="35.0" prefWidth="55.0" text="CN" />
+      <TextField fx:id="TextFav" layoutX="297.0" layoutY="108.0" onAction="#choixprix" prefHeight="35.0" prefWidth="55.0" promptText="Prix" style="-fx-background-color: #086DA3;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
